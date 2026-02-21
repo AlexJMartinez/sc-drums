@@ -1069,6 +1069,8 @@ s.doWhenBooted({
   ~idm[\cmd].value("last")   (load last used path)
   ~idm[\cmd].value("loadlast") (alias)
 
+//First # before the path is how many bars you'd like rendered, the number at the end is the beat offset +- 1
+
   ~idm[\renderBarsDownbeat].value(4, "/Users/name/desktop/{filename}", 0);
 
 
