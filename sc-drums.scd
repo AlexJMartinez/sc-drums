@@ -2,7 +2,6 @@
 // =====================================================
 // BREAKBEAT IDM SLICER — HEADLESS + CLI (v3.4)
 // - No GUI
-// - NO Task/Routine player (avoids _RoutineResume)
 // - Player is a single SystemClock.sched chain with phase state machine
 // - Guard token + player token -> reset-safe, old callbacks bail
 // =====================================================
@@ -1061,16 +1060,16 @@ s.doWhenBooted({
 //COMMANDS
 
 
-  ~idm[\cmd].value("load /Volumes/Alex's Storage/DRUMS/breakcore/Amen_Breaks/amenbrother175bpm.wav")
+  ~idm[\cmd].value("load /Users/name/path/to/your/file")
   ~idm[\cmd].value("play")
   ~idm[\cmd].value("stop")
   ~idm[\cmd].value("preview 0")
-  ~idm[\cmd].value("render 8 /Users/alexmartinez/desktop/idm_break_01.wav");
+  ~idm[\cmd].value("render 8 /Users/name/desktop/{filename}");
   ~idm[\cmd].value("forceSound 1")   (1/0)
   ~idm[\cmd].value("last")   (load last used path)
   ~idm[\cmd].value("loadlast") (alias)
 
-  ~idm[\renderBarsDownbeat].value(4, "/Users/alexmartinez/desktop/idm_loop_4bar_01.wav", 0);
+  ~idm[\renderBarsDownbeat].value(4, "/Users/name/desktop/{filename}", 0);
 
 
 //PARAMS (enter values between 0-1)
@@ -1101,5 +1100,5 @@ ServerOptions.devices;
 
 //SET OUTPUT DEVICE (requires server reboot)
 
-s.options.outDevice = "MacBook Air Speakers";
+s.options.outDevice = "YOUR DEVICE NAME HERE";
 s.reboot;
