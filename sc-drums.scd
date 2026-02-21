@@ -1074,14 +1074,19 @@ s.doWhenBooted({
 
 //PARAMS (enter values between 0-1)
 
-~idm[\setMacro].value(\burst, 0.18);
+~idm[\setMacro].value(\burst, 0.10);
 ~idm[\setMacro].value(\glitch, 0.10);
-~idm[\setMacro].value(\repeats, 0.10);
-~idm[\setMacro].value(\density, 0.30);
-~idm[\setMacro].value(\reverse, 0.50);
-~idm[\setMacro].value(\ratespread, 0.12);
+~idm[\setMacro].value(\ghost, 0.50);
+~idm[\setMacro].value(\repeats, 0.50);
+~idm[\setMacro].value(\density, 0.50);
+~idm[\setMacro].value(\panwidth, 0.30);
+~idm[\setMacro].value(\reverse, 0.10);
+~idm[\setMacro].value(\ratespread, 0.10);
 ~idm[\setMacro].value(\tight, 0.23);
 ~idm[\setMacro].value(\swing, 0.12);
+~idm[\setMacro].value(\snareBias, 0.12);
+~idm[\setMacro].value(\hatBias, 0.12);
+~idm[\setMacro].value(\fill, 0.12);
 
 //CHECK A PARAM VALUE
 
