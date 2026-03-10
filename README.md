@@ -1,0 +1,1 @@
+To use this script, make sure SuperCollider is installed on your system. It's best to use with the SuperCollider IDE, you just need to copy my script/paste into the SuperCollider IDE, then where you see the ~load function (cmd + f '~load'), add the path to a drum break and evaluate the script. 
